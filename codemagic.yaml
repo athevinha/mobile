@@ -1,6 +1,7 @@
-scripts:
-  - name: Install CocoaPods dependencies
-    script: |
-      cd ios
-      gem install cocoapods -v 1.11.3  # Ensure you’re using a compatible version of CocoaPods
-      pod install
+workflows:
+  scripts:
+    - name: Install CocoaPods dependencies
+      script: |
+        cd ios
+        gem install cocoapods -v 1.11.3  # Ensure you’re using a compatible version of CocoaPods
+        pod install
